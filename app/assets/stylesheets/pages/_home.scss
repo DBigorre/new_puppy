@@ -1,22 +1,8 @@
-* {
+.home {
 	box-sizing: border-box;
   margin: 0;
   padding: 0;
-  text-decoration: none;
-  /*color: #ffffff ;*/
-}
-
-*:focus {
-  outline: 0;
-  /*color: #2196f3;*/
-}
-
-html {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-body {
-	align-items: center;
+  align-items: center;
 	background-image: linear-gradient(
 											0deg,
 											#930bcb 0%,
@@ -30,16 +16,25 @@ body {
 	min-height: 100vh;
 }
 
-.container {
+.home:focus {
+  outline: 0;
+
+}
+
+.home html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.home .containers {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	max-width: 1000px;
+	//max-width: 1000px;
 	position: relative;
 	transform-style: preserve-3d;
 }
 
-.container .card {
+.home .containers .card {
 	align-items: center;
 	background-color: #ffffff;
 	border-radius: 4px;
@@ -58,25 +53,25 @@ body {
 	width: 180px;
 }
 
-.container:hover .card,
-.container:focus .card,
-.container:active .card {
+.home .containers:hover .card,
+.home .containers:focus .card,
+.home .containers:active .card {
 	transform: perspective(500px) rotateY(30deg);
 }
 
-.container .card:hover,
-.container .card:focus,
-.container .card:active {
+.home .containers .card:hover,
+.home .containers .card:focus,
+.home .containers .card:active {
 	transform: perspective(500px) rotateY(0);
 }
 
-.container .card:hover ~ .card,
-.container .card:focus ~ .card,
-.container .card:active ~ .card {
+.home .containers .card:hover ~ .card,
+.home .containers .card:focus ~ .card,
+.home .containers .card:active ~ .card {
 	transform: perspective(500px) rotateY(-30deg);
 }
 
-.container .card h2 {
+.home .containers .card h2 {
 	background-color: #2196f3;
 	border-radius: 25%;
 	color: #ffffff;
@@ -90,12 +85,16 @@ body {
 
 }
 
-.container .card:hover h2,
-.container .card:focus h2,
-.container .card:active h2 {
+.home .containers .card:hover h2,
+.home .containers .card:focus h2,
+.home .containers .card:active h2 {
 	background-color: #ffffff;
 	box-shadow: 0 0 0 150px #2196f3;
 	color: #2196f3;
 
 }
 
+.home a:link{
+  text-decoration: none;
+  color: #ffffff;
+}
