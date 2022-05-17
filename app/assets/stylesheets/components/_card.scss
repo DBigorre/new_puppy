@@ -17,13 +17,7 @@
     list-style-type: none;
   }
 
-  #ap{
-    display: list-item;
-  }
 
-  #vet{
-    display: list-item;
-  }
   .liste{
     font-size: 16px;
     padding: 30px;
@@ -48,6 +42,69 @@
     display: flex;
   }
 
-  ul li.card:nth-child(2){
-    color: red;
-  }
+
+
+ #apprentissage{
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+#veto{
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+
+.card-category{
+  align-items: center;
+	background-color: #ffffff;
+	border-radius: 4px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	display: flex;
+	height: 240px;
+	justify-content: center;
+	margin: 2rem 10px;
+	overflow: hidden;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: background-color 0.5s ease,
+							color 0.5s ease,
+							transform 0.5s ease;
+	width: 180px;
+}
+
+
+
+#apprentissage{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+	display: flex;
+	font-family: 'Poppins', sans-serif;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.container_postit{
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 1000px;
+	position: relative;
+	transform-style: preserve-3d;
+}
+
+#veto{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+	display: flex;
+	font-family: 'Poppins', sans-serif;
+	justify-content: center;
+	min-height: 100vh;
+}
