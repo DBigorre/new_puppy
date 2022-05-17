@@ -10,4 +10,10 @@ Rails.application.routes.draw do
   get 'lecoinjeux', to: 'pages#lecoinjeux'
   get 'lecoinveto', to: 'pages#lecoinveto'
   get 'quelquesadresses', to: 'pages#quelquesadresses'
+  get 'lesordresdebase', to: 'pages#lesordresdebase'
+  get 'lessportscanins', to: 'pages#lessportscanins'
+  get 'lestrucsenplus', to: 'pages#lestrucsenplus'
+  get 'lespoisons', to: 'pages#lespoisons'
+  get 'leschosesaavoir', to: 'pages#leschosesaavoir'
+  get 'lentretiencourant', to: 'pages#lentretiencourant'
 end

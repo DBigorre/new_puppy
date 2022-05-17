@@ -3,8 +3,8 @@
     </header>
     <div class="container" id="veto">
       <div class="container_postit">
-         <a href="/lespoisons" target="blank"class="card-category"> Les poisons</a>
-         <a href="/leschosesaavoir" target="blank" class="card-category"> Les choses à avoir</a>
-         <a href="/lentretiencourant" target="blank"class="card-category"> L'entretien courant</a>
+         <%= link_to "Les poisons", lespoisons_path, :class=>"card-category" %>
+         <%= link_to "Les choses à avoir", leschosesaavoir_path, :class=>"card-category" %>
+         <%= link_to "L'entretien courant", lentretiencourant_path, :class=>"card-category" %>
       </div>
     </div>
